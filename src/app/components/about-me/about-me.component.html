@@ -1,0 +1,8 @@
+<h2 (click)="showInputUser()">About Me</h2>
+<input type="text" [hidden]="hideInputUser" [(ngModel)]="user.name">
+<button [hidden]="hideInputUser" (click)="showInputUser()">Save</button>
+<h5 >Photo of me: {{ user.name }}</h5>
+<div class="fakeimg">
+  <img [src]="user.avatar" alt="" width="100%">
+</div>
+

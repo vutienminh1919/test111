@@ -1,0 +1,12 @@
+<table class="table">
+  <tr>
+    <td>
+      <input [(ngModel)]="comment.name" type="text" class="form-control" placeholder="Ten">
+    </td>
+    <td><input [(ngModel)]="comment.content"  type="text" class="form-control" placeholder="Noi dung"></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button type="button" class="btn btn-success" (click)="submit()">Luu</button></td>
+  </tr>
+</table>
